@@ -1,0 +1,137 @@
+.fullscreen-3 {
+}
+
+.fullscreen-3__body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.fullscreen-3__column {
+	display: flex;
+	flex: 1 0 50%;
+}
+
+.fullscreen-3__column_reverse {
+	flex-direction: row-reverse;
+}
+
+.fullscreen-3__article {
+	flex: 1 1 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.fullscreen-3__article-body {
+	display: flex;
+	box-sizing: border-box;
+	max-width: 590px;
+	min-height: 0px;
+	padding: 10px 120px 10px 10px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.fullscreen-3__article_reverse {
+	justify-content: flex-start;
+}
+
+.fullscreen-3__article-body_reverse {
+	padding: 20px 10px 20px 80px;
+}
+
+.fullscreen-3__article-subtitle {
+	font-weight: 100;
+	margin-bottom: 15px;
+	.subtitle__separator {
+		word-spacing: 9px;
+	}
+}
+
+.fullscreen-3__article-title {
+	margin-bottom: 35px;
+}
+
+.fullscreen-3__article-text {
+	font-weight: 100;
+	margin-bottom: 24px;
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+.fullscreen-3__img {
+	flex: 1 1 50%;
+	min-height: 100%;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+@media (max-width: 1279px) {
+	.fullscreen-3__article-body, .fullscreen-3__article-body_reverse {
+		padding: 10px 30px 10px 30px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.fullscreen-3__column {
+		flex-direction: column;
+	}
+
+	.fullscreen-3__article {
+		justify-content: center;
+	}
+
+	.fullscreen-3__article-body {
+		max-width: 800px;
+		padding: 50px 100px 50px 50px;
+	}
+
+	.fullscreen-3__article-body_reverse {
+		text-align: right;
+		padding: 50px 50px 50px 100px;
+	}
+}
+
+@media (max-width: 799px) {
+	.fullscreen-3__article-body {
+		max-width: none;
+		padding: 40px 80px 40px 40px;
+	}
+
+	.fullscreen-3__article-body_reverse {
+		padding: 40px 40px 40px 80px;
+	}
+}
+
+@media (max-width: 599px) {
+	.fullscreen-3__article-title {
+		font-size: 21px;
+		margin-bottom: 20px;
+	}
+
+	.fullscreen-3__article-text {
+		margin-bottom: 16px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	.fullscreen-3__article-body{
+		padding: 30px 50px 30px 30px;
+	}
+
+	.fullscreen-3__article-body_reverse {
+		padding: 30px 30px 30px 50px;
+	}
+}
+
+@media (max-width: 399px) {
+	.fullscreen-3__article-body {
+		padding: 25px;
+	}
+}

@@ -1,0 +1,133 @@
+.fullscreen-7__body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.fullscreen-7__title {
+	background-image: url('../../img/members (5)/T.png');
+	margin: 65px 0px 50px 0px;
+}
+
+.fulscreen-7__subtitle {
+	margin-bottom: 65px;
+	padding: 0px 20px;
+	font-size: 30px;
+	line-height: 1.4em;
+	color: #222222;
+	text-align: center;
+}
+
+.fullscreen-7__cards {
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 100px;
+	padding: 0px 20px;
+	align-items: flex-start;
+}
+
+.fullscreen-7__card {
+	display: flex;
+	max-width: 270px;
+	margin-right: 20px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+.fullscreen-7__card-img {
+	margin-bottom: -48px;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.fullscreen-7__card-titles {
+	width: 80%;
+	background-color: white;
+}
+
+.fullscreen-7__card-title {
+	margin: 22px 0px 4px 0px;
+	color: #11749e;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+}
+
+.fullscreen-7__card-subtitle{
+	font-size: 15px;
+	text-align: center;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+@media (max-width: 1279px) {
+	.fullscreen-7__cards {
+		max-width: 70%;
+		flex-wrap: wrap;
+	}
+
+	.fullscreen-7__card {
+		margin: 0px 0px 40px 0px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.fullscreen-7__cards {
+		max-width: 84%;
+	}
+}
+
+@media (max-width: 800px) {
+	.fullscreen-7__cards {
+		margin-bottom: 50px;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.fulscreen-7__subtitle {
+		font-size: 27px;
+	}
+}
+
+@media (max-width: 599px) {
+	.fullscreen-7__title {
+		margin-bottom: 40px;
+		.title__text {
+			font-size: 28px;
+		}
+	}
+
+	.fulscreen-7__subtitle {
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+
+	.fullscreen-7__cards {
+		margin-bottom: 20px;
+		max-width: none;
+	}
+}
+
+@media (max-width: 449px) {
+	.fullscreen-7__title {
+		margin-top: 50px;
+		.title__text {
+			font-size: 24px;
+		}
+	}
+
+	.fulscreen-7__subtitle {
+		font-size: 20px;
+		padding: 0px 15px;
+	}
+}

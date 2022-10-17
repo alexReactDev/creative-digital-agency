@@ -1,0 +1,26 @@
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cards__item {
+	text-align: center;
+}
+
+.cards__item-img {
+	display: flex;
+	justify-content: center;
+}
+
+.cards_horizontal {
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.cards__row {
+	display: flex;
+}
+
+.cards__cell {
+}
