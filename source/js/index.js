@@ -3,6 +3,10 @@ window.onload = () => {
 	document.querySelector('.header__burger').onclick = openMenu;
 	resizeHandler();
 	document.querySelector('.fullscreen-1__scroll-img').onclick = scrollDown;
+	document.querySelector('.aux').addEventListener("mouseenter", (e) => {
+		console.log("Mouseenter");
+		document.querySelector('.header').classList.remove("header_invisible");
+	})
 }
 
 function assignItems() {
@@ -37,14 +41,29 @@ function closeMenu() {
 	burger.onclick = openMenu;
 }
 
-window.onscroll = () => {
-	if (document.documentElement.scrollTop > 0) {
-		document.querySelector('.header').classList.add('header_scroll');
-		return;
-	}
+function wrapper() {
+	let lastScroll = 0;
 
-	document.querySelector('.header').classList.remove('header_scroll');
+	return () => {
+		if (document.documentElement.scrollTop > 0) {
+			document.querySelector('.header').classList.add('header_scroll');
+		}
+		else {
+			document.querySelector('.header').classList.remove('header_scroll');
+		}
+
+		if(lastScroll < document.documentElement.scrollTop) {
+			document.querySelector('.header').classList.add('header_invisible');
+		}
+		else {
+			document.querySelector('.header').classList.remove('header_invisible');
+		}
+
+		lastScroll = window.scrollY;
+	}
 }
+
+window.onscroll = wrapper();
 
 window.onresize = resizeHandler;
 

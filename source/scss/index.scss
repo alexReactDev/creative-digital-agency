@@ -40,6 +40,14 @@ body {
 	margin: auto;
 }
 
+.aux {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	left: 0px;
+	top: 0px;
+}
+
 @import './burger-menu.scss';
 @import './header.scss';
 @import './nav.scss';
