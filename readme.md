@@ -2,7 +2,7 @@
 ## :uk: English
 __Description:__ Corporative landing
 
-__Deployed project:__ http://creative-digital-agency.alexander-portfolio-and-cv.com
+__Deployed project:__ http://creative.alexander-portfolio-and-cv.com
 
 __Used technologies:__
 
@@ -15,7 +15,7 @@ __About project:__ Creative digital agency is a corporative website of art studi
 ## :ru: Русский
 __Описание:__ Корпоративный лендинг 
 
-__Развернутый проект:__ http://creative-digital-agency.alexander-portfolio-and-cv.com
+__Развернутый проект:__ http://creative.alexander-portfolio-and-cv.com
 
 __Использованные технологии:__
 
